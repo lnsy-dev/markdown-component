@@ -2,7 +2,7 @@
 A simple HTML Component for rendering unsanitized markdown.
 
 ## Caution
-As I said: for ease of use I do not sanitize markdown. 
+As I said: for ease of use I do not sanitize the markdown -- use appropriately. 
 
 ## How to use
 
