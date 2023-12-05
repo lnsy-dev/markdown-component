@@ -1,4 +1,4 @@
-import "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
+import "./marked.min.js";
 class MarkdownComponent extends HTMLElement {
   connectedCallback(){
     this.src = this.getAttribute('src'); 
