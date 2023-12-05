@@ -1,3 +1,4 @@
+![Splash](./splash.jpg)
 # markdown-component
 A simple HTML Component for rendering unsanitized markdown.
 
