@@ -24,3 +24,13 @@ Use the src tag to load an external file and render it like so:
 ```html
   <mark-down src="./test-markdown.md"></mark-down>
 ```
+
+## Github
+
+https://github.com/lnsy-dev/markdown-component
+
+## Hire Me 
+
+https://lnsy.dev
+
+
