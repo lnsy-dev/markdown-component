@@ -7,7 +7,7 @@ As I said: for ease of use I do not sanitize the markdown -- use appropriately.
 
 ## How to use
 
-Markdown component uses the Marked library to parse markdown in a tidy web component. Include the markdown-component.js file in a script tag and use the mark-down tag. 
+Markdown component uses the [Marked](https://github.com/markedjs/marked) library to parse markdown in a tidy web component. Include the markdown-component.js file in a script tag and use the mark-down tag. 
 
 ```html
   <script type="module" src="https://lnsy-dev.github.io/markdown-component/dist/mark-down-component.min.js"></script>
@@ -34,4 +34,7 @@ https://github.com/lnsy-dev/markdown-component
 
 https://lnsy.dev
 
+## Prior Work
+
+Uses Marked library: https://github.com/markedjs/marked
 
