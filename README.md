@@ -1,13 +1,13 @@
+---
+type: index
+last-updated: 07/25/2024
+---
+
 ![Splash](./splash.jpg)
 # markdown-component
 A simple HTML Component for rendering unsanitized markdown.
 
-## Caution
-As I said: for ease of use I do not sanitize the markdown -- use appropriately. 
-
 ## How to use
-
-Markdown component uses the [Marked](https://github.com/markedjs/marked) library to parse markdown in a tidy web component. Include the markdown-component.js file in a script tag and use the mark-down tag. 
 
 ```html
   <script type="module" src="https://lnsy-dev.github.io/markdown-component/dist/mark-down-component.min.js"></script>
