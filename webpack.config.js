@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/index.js','./styles/index.css'],
+  mode: 'production',
+  entry: ['./src/index.js','./src/index.css'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     // Bundle name
