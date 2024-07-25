@@ -21,7 +21,7 @@ export function extractYamlFrontMatter(inputString) {
             return null;
         }
     }
-    return null;
+    return {};
 }
 
 export function removeYamlFrontMatter(inputString) {

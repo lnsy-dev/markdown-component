@@ -5,16 +5,20 @@ import { hljs } from "./vendor/highlight/highlight.min.js";
 
 class dataroomCompiler extends DataroomElement {
   async initialize(){
-    if(this.attrs["src"]){
-      this.content = await fetch(this.attrs["src"]).then(res => res.text());
+    console.log(this.attrs["src"]);
+    if(typeof this.attrs["src"] !== 'undefined'){
+      this.content = await fetch(this.attrs["src"])
+        .then(res => res.text())
     } else {
       this.content = this.innerHTML;
+      this.innerHTML = ' ';
     }
     await this.render();
 
   }
   async render(){
-    const parsed_markup = await parseDataroomMarkup(this.content);
+    const parsed_markup = await parseDataroomMarkup(this.content.trim());
+    console.log(parsed_markup);
     Object.keys(parsed_markup.data).forEach(key => {
       this.setAttribute(key, parsed_markup.data[key]);
     });
