@@ -4,7 +4,7 @@ mark-down {
 }
 
 link-tag {
-  color: var(--dark-color);
+  color: var(--highlight-color);
   background-color: var(--secondary-highlight-color);
 }
 
@@ -28,15 +28,16 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 
 */
 .hljs {
-  color: #ddd;
-  background: #303030
+  color: var(--code-foreground-color);
+  background: var(--code-background-color);
 }
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal,
 .hljs-section,
+.hljs-attr,
 .hljs-link {
-  color: white
+  color: var(--code-highlight-color);
 }
 .hljs-subst {
   /* default */
@@ -54,13 +55,13 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: #d88
+  color: var(--code-secondary-highlight-color);
 }
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion,
 .hljs-meta {
-  color: #979797
+  color: var(--code-secondary-highlight-color);
 }
 .hljs-keyword,
 .hljs-selector-tag,
@@ -71,6 +72,7 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 .hljs-type,
 .hljs-name,
 .hljs-strong {
+  color: var(--code-neutral-color);
   font-weight: bold
 }
 .hljs-emphasis {

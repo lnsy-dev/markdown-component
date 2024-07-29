@@ -1,5 +1,5 @@
 import yaml from './vendor/js-yaml.js'; 
-import marked from './vendor/marked.min.js';
+import './vendor/marked.min.js';
 
 
 export function extractYamlFrontMatter(inputString) {
