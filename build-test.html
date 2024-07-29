@@ -1,0 +1,41 @@
+<title>Markdown Element</title>
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+  :root {
+    --bg-color: white;
+    --fg-color: black;
+    --neutral-color: grey;
+    --body-font: "Inconsolata", monospace;
+    --highlight-color: orange;
+    --error-color: red;
+    --notification-color: green;
+    --warning-color: orange;
+    --font-size: 14pt;
+    --line-height: 24pt;
+    --overlay-color: rgba(0,0,0,0.6);
+    --code-background-color: rgba(0,0,0,1);
+    --code-foreground-color: white;
+    --code-highlight-color: green;
+    --code-secondary-highlight-color: orange;
+    --code-error-color: red;
+    --code-neutral-color: grey;
+  }
+
+  body {
+    font-family: var(--body-font);
+    width: 40em;
+    margin:auto;
+  }
+
+  img {
+    width: 40em;
+    height: auto;
+  }
+</style>
+
+<script type="module" src="./dist/mark-down-component.min.js"></script>
+
+<mark-down src="./README.md">
+</mark-down>
