@@ -1,5 +1,11 @@
 import yaml from './vendor/js-yaml.js'; 
-import marked from './vendor/marked.min.js';
+import markdownit from './vendor/markdown-it.js';
+
+const md = markdownit({
+  html: true,
+  breaks: true,
+  linkify: true,
+});
 
 
 export function extractYamlFrontMatter(inputString) {
@@ -37,7 +43,7 @@ export async function parseDataroomMarkup(content, attributes = {}) {
   const data = extractYamlFrontMatter(content);
   const template_without_yaml = removeYamlFrontMatter(content);
   const new_value = replaceVariables(template_without_yaml, data)
-  const renderedContent = marked.parse(new_value);
+  const renderedContent = md.render(new_value);
   return {data:data, html: renderedContent};
 }
 

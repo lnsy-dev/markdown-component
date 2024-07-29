@@ -4,11 +4,9 @@ function isNothing(subject) {
   return (typeof subject === 'undefined') || (subject === null);
 }
 
-
 function isObject(subject) {
   return (typeof subject === 'object') && (subject !== null);
 }
-
 
 function toArray(sequence) {
   if (Array.isArray(sequence)) return sequence;
@@ -16,7 +14,6 @@ function toArray(sequence) {
 
   return [ sequence ];
 }
-
 
 function extend(target, source) {
   var index, length, key, sourceKeys;
@@ -33,7 +30,6 @@ function extend(target, source) {
   return target;
 }
 
-
 function repeat(string, count) {
   var result = '', cycle;
 
@@ -44,11 +40,9 @@ function repeat(string, count) {
   return result;
 }
 
-
 function isNegativeZero(number) {
   return (number === 0) && (Number.NEGATIVE_INFINITY === 1 / number);
 }
-
 
 var isNothing_1      = isNothing;
 var isObject_1       = isObject;
@@ -68,7 +62,6 @@ var common = {
 
 // YAML error class. http://stackoverflow.com/questions/8458984
 
-
 function formatError(exception, compact) {
   var where = '', message = exception.reason || '(unknown reason)';
 
@@ -86,7 +79,6 @@ function formatError(exception, compact) {
 
   return message + ' ' + where;
 }
-
 
 function YAMLException$1(reason, mark) {
   // Super constructor
@@ -107,16 +99,13 @@ function YAMLException$1(reason, mark) {
   }
 }
 
-
 // Inherit from Error
 YAMLException$1.prototype = Object.create(Error.prototype);
 YAMLException$1.prototype.constructor = YAMLException$1;
 
-
 YAMLException$1.prototype.toString = function toString(compact) {
   return this.name + ': ' + formatError(this, compact);
 };
-
 
 var exception = YAMLException$1;
 
