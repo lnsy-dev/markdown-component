@@ -1,10 +1,16 @@
 import yaml from './vendor/js-yaml.js'; 
 import markdownit from './vendor/markdown-it.js';
+import markdownItAttribution from './vendor/markdown-it-attribution.min.js';
+
 
 const md = markdownit({
   html: true,
   breaks: true,
   linkify: true,
+  typographer: true
+
+}).use(markdownItAttribution, {
+  marker: 'cite:',
 });
 
 

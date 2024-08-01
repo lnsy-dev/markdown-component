@@ -7,6 +7,8 @@ last-updated: 07/25/2024
 # markdown-component
 A simple HTML Component for rendering unsanitized markdown.
 
+
+
 ## How to use
 
 ```html
@@ -25,6 +27,11 @@ Use the src tag to load an external file and render it like so:
 ```html
   <mark-down src="./test-markdown.md"></mark-down>
 ```
+
+### Block Quotes
+
+> That's one small step for [a] man, one giant leap for mankind.  
+> -- Neil Armstrong (1969, July 21)
 
 ## Github
 

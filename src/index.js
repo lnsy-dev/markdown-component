@@ -10,7 +10,7 @@ class dataroomCompiler extends DataroomElement {
       this.content = await fetch(this.attrs["src"])
         .then(res => res.text())
     } else {
-      this.content = this.innerHTML;
+      this.content = this.textContent;
       this.innerHTML = ' ';
     }
     await this.render();
@@ -18,7 +18,6 @@ class dataroomCompiler extends DataroomElement {
   }
   async render(){
     const parsed_markup = await parseDataroomMarkup(this.content.trim());
-    console.log(parsed_markup);
     Object.keys(parsed_markup.data).forEach(key => {
       this.setAttribute(key, parsed_markup.data[key]);
     });
